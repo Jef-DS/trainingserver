@@ -17,5 +17,14 @@ router.get('/', (req, res) => {
     });
     return res.status(200).json(overview);
 });
+router.get('/:id', (req, res) => {
+    let courseid =  req.params.id;
+    console.log(`Somebody wants to get the course with id ${courseid}`);
+    let foundCourse = courses.find(c => c.id == courseid);
+    if (foundCourse){
+        return res.status(200).json(foundCourse);
+    }
+    return res.status(404).json({msg: `Course with id ${courseid} not found`});
+});
 
 module.exports = router;
