@@ -8,6 +8,7 @@ const courses = [
 ];
 
 router.get('/', (req, res) => {
+    console.log('Somebody wants to get the courses.')
     const overview = courses.map(course => {
         var obj = {};
         obj['id'] = course.id;
