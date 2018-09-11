@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyparser = require('body-parser');
+const jwt = require('jsonwebtoken');
 const app = express();
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(bodyparser.json());
