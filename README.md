@@ -10,7 +10,7 @@ Start the server with "npm start"
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/trainingserver/tags). 
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/Jef-DS/trainingserver/tags). 
 
 ## Authors
 
