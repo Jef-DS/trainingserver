@@ -25,6 +25,15 @@ router.get('/', (req, res) => {
     console.log('user not logged in');
     return res.status(401).json({msg: 'Please login'});
 });
+router.get('/:id', (req, res) => {
+    let userid =  req.params.id;
+    console.log(`Somebody wants to get the user with id ${userid}`);
+    let foundUser = users.find(u => u.id == userid);
+    if (foundUser){
+        return res.status(200).json(foundUser);
+    }
+    return res.status(404).json({msg: `User with id ${userid} not found`});
+});
 router.post('/login', (req, res) => {
     console.log("In login");
     var user = req.body;
