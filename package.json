@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/Jef-DS/trainingserver#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-delay": "^0.2.0",
     "jsonwebtoken": "^8.5.1"
   }
